@@ -4,7 +4,7 @@
   "description": "Default theme for the Aglio API Blueprint renderer",
   "main": "lib/main.js",
   "scripts": {
-    "build": "cp -R .s/rc/*.js ./lib/",
+    "build": "mkdir lib && cp -R ./src/*.js ./lib/",
     "precoverage": "npm run build",
     "coverage": "istanbul cover -x cache/*.js _mocha -- --compilers coffee:coffee-script/register -R spec",
     "precoveralls": "npm run coverage",
