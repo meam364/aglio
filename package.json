@@ -12,7 +12,7 @@
     "pretest": "npm run build",
     "test": "mocha --compilers coffee:coffee-script/register",
     "prepublish": "npm run build",
-    "postinstall": "node scripts/setup-cache.js && mkdir lib && cp -R src/*.js lib"
+    "postinstall": "mkdir lib && cp -R src/*.js lib"
   },
   "repository": {
     "type": "git",
